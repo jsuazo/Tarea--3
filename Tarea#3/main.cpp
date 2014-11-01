@@ -10,12 +10,13 @@
 using namespace std;
 
 void CreaArchivo(string NameArch){
- ofstream out(NameArch.c_str());
- if(out.is_open())
- cout << "Archivo creado con exito..." << endl;
- out.close();
+ ofstream out(NameArch.c_str());//Se abre un stream y se le asigna  el nombre para crear el archivo
+ if(out.is_open())//Si el archivo fue creado
+ cout << "Archivo creado con exito..." << endl;// Imprime esto
+ out.close();// archivo
 }
 
+// Esta funcion de Listar archivos la sacamos de la clase programacion 3
 void ListarDirectorio(char directorio[100]){
    WIN32_FIND_DATA ffd;
    LARGE_INTEGER filesize;
@@ -71,13 +72,7 @@ void ListarDirectorio(char directorio[100]){
 }
 
 void EditarArchivo(string NameArch){
-
-
-//	char path_archivo[200] = "C:\\Tarea#3\\";
 	string linea;
-
-	//lstrcpy(path_archivo, NameArch.c_str());
-
 	ofstream out(NameArch.c_str(),ios::in);
 	 if(!out.is_open()){
         out.open(NameArch.c_str());
