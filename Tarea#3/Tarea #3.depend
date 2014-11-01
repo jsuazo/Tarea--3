@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1414709497 source:c:\tarea #3\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<windows.h>
+	<tchar.h>
+	<stdio.h>
+	<iostream>
+	<iomanip>
+
+1414779681 source:c:\tarea#3\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<windows.h>
+	<tchar.h>
+	<stdio.h>
+	<iostream>
+	<sstream>
+	<iomanip>
+
